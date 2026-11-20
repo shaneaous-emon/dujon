@@ -20,9 +20,13 @@ pnpm dev
 Open http://localhost:3000 (Bangla) and http://localhost:3000/en (English).
 Demo login: demo+male1@example.invalid / Demo-pass-2026. Emails are written to `.data/mail/*.json` (open the file to find the confirm link).
 
-## Windows + MAMP (easiest)
-1. Open MAMP and press Start Servers (MySQL must be green; default port 8889, root/root).
-2. Install Node 22+ from nodejs.org if missing.
-3. In the project folder, double-click `setup-windows.bat` (or run it in Command Prompt).
-4. Open http://localhost:3000
-If your MAMP MySQL uses another port/password, edit `.env.local` (DB_PORT, DB_PASSWORD).
+## Windows + XAMPP (easiest)
+1. Open XAMPP Control Panel and press Start next to MySQL (it turns green; port 3306, user root, no password).
+   Apache is not needed — Next.js runs its own server on port 3000.
+2. Install Node 22 LTS from nodejs.org if `node -v` fails.
+3. In the project folder, double-click `setup-windows.bat`. First run takes a few minutes.
+4. Open http://localhost:3000 and keep the black window open (closing it stops the site).
+5. Demo login: demo+male1@example.invalid / Demo-pass-2026. Emails (verify/reset links) are saved in `.data/mail/`.
+Next time: start MySQL in XAMPP, then run `pnpm dev` in the folder.
+MAMP instead of XAMPP: run `setup-windows.bat mamp` (port 8889, root/root).
+If your MySQL has a password or other port, edit `.env.local` (DB_PASSWORD, DB_PORT).
