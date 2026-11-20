@@ -19,3 +19,10 @@ pnpm dev
 ```
 Open http://localhost:3000 (Bangla) and http://localhost:3000/en (English).
 Demo login: demo+male1@example.invalid / Demo-pass-2026. Emails are written to `.data/mail/*.json` (open the file to find the confirm link).
+
+## Windows + MAMP (easiest)
+1. Open MAMP and press Start Servers (MySQL must be green; default port 8889, root/root).
+2. Install Node 22+ from nodejs.org if missing.
+3. In the project folder, double-click `setup-windows.bat` (or run it in Command Prompt).
+4. Open http://localhost:3000
+If your MAMP MySQL uses another port/password, edit `.env.local` (DB_PORT, DB_PASSWORD).
