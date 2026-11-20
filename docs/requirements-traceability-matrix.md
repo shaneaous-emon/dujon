@@ -45,12 +45,12 @@ Service names refer to `src/server/services/<name>.service.ts` (doc 06 §3.1). S
 | FR-PUB-007 | SCR-06, SCR-07, SCR-08 | PUB | users (consent versions) | — | TC-008 | ☐ |
 | FR-PUB-008 | SCR-01 | PUB, seed scripts | users.is_demo | — | TC-009, TC-117 | ☐ |
 | FR-PUB-009 | All | layout | — | API-004 | TC-010 | ☐ |
-| FR-PUB-010 | SCR-28 | layout | — | — | TC-011 | ☐ |
-| FR-I18N-001 | All | i18n routing | — | — | TC-012 | ☐ |
-| FR-I18N-002 | All | i18n (LanguageSwitcher) | — | — | TC-013 | ☐ |
-| FR-I18N-003 | All, SCR-25 | i18n, account | users.preferred_locale | API-037 | TC-014 | ☐ |
-| FR-I18N-004 | All | i18n tooling | — | — | TC-015 | ☐ |
-| FR-I18N-005 | All | i18n formatting | — | — | TC-016 | ☐ |
+| FR-PUB-010 | SCR-28 | layout | — | — | TC-011 | ◐ |
+| FR-I18N-001 | All | i18n routing | — | — | TC-012 | ☑ |
+| FR-I18N-002 | All | i18n (LanguageSwitcher) | — | — | TC-013 | ☑ |
+| FR-I18N-003 | All, SCR-25 | i18n, account | users.preferred_locale | API-037 | TC-014 | ◐ |
+| FR-I18N-004 | All | i18n tooling | — | — | TC-015 | ☑ |
+| FR-I18N-005 | All | i18n formatting | — | — | TC-016 | ☑ |
 | FR-I18N-006 | Emails | mailer | users.preferred_locale | — | TC-017 | ☐ |
 | FR-AUTH-001 | SCR-09 | auth | users, profiles, partner_preferences | API-001 | TC-018 | ☐ |
 | FR-AUTH-002 | SCR-09 | auth (age lib) | users, profiles | API-001 | TC-019, TC-020 | ☐ |

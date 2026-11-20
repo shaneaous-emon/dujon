@@ -251,9 +251,9 @@ Any change from option A requires owner approval (OD-014).
 | Member pages, API | Dynamic per request | `Cache-Control: private, no-store` |
 | Photos | Dynamic, authorised | `private, max-age=300` |
 
-## 10. Security headers (set in middleware / `next.config`)
+## 10. Security headers (set in `next.config.ts`)
 
-`Strict-Transport-Security: max-age=63072000; includeSubDomains` · `Content-Security-Policy` (self, nonce-based scripts, `img-src 'self' data: blob:`, `connect-src 'self' <analytics>`, `frame-ancestors 'none'`) · `X-Content-Type-Options: nosniff` · `Referrer-Policy: strict-origin-when-cross-origin` · `Permissions-Policy: camera=(), microphone=(), geolocation=()` · `X-Frame-Options: DENY`.
+`Strict-Transport-Security: max-age=63072000; includeSubDomains` · `Content-Security-Policy` (self; scripts `'self' 'unsafe-inline'` because public pages are statically generated and a per-request nonce would force dynamic rendering — *M1 implementation note*; `img-src 'self' data: blob:`, `connect-src 'self' <analytics>`, `frame-ancestors 'none'`) · `X-Content-Type-Options: nosniff` · `Referrer-Policy: strict-origin-when-cross-origin` · `Permissions-Policy: camera=(), microphone=(), geolocation=()` · `X-Frame-Options: DENY`.
 
 ## 11. Future extensibility
 
@@ -267,3 +267,12 @@ Any change from option A requires owner approval (OD-014).
 | Broader gender/discovery settings | `targetGenderFor()` single policy function; add `seeking` column later without rewriting profiles |
 | Paid plans | Separate `subscriptions` module; no payment logic leaks into existing services |
 | Testimonials | Future `testimonials` table with consent fields (doc 07 §8) |
+
+
+## 12. Implementation notes (M1)
+
+- Next.js 16 renamed `middleware.ts` to **`src/proxy.ts`**; it handles locale redirects now and the auth gate from M3.
+- `cacheComponents` (enabled by the Next.js 16 scaffold) is **off** for now to keep next-intl static rendering predictable; revisit in M8.
+- Fonts are self-hosted files in `src/fonts/` (OFL) via `next/font/local`.
+- Known issue: a 404 response's initial HTML is Next.js's error shell and the localized 404 content renders in the browser (verified by TC-011). Not indexed (noindex). Investigate in M8.
+- The locale cookie is set only by the language switcher (explicit choice), not by visiting a URL.
