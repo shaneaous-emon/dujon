@@ -1,0 +1,14 @@
+# Local development database only (no real data). Usage: docker compose up -d
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: dujon
+      MYSQL_USER: dujon
+      MYSQL_PASSWORD: dujon_dev
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    ports: ["3306:3306"]
+    volumes: [dbdata:/var/lib/mysql]
+volumes:
+  dbdata:
