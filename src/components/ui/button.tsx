@@ -3,17 +3,20 @@ import { Slot } from "@radix-ui/react-slot";
 import { cn } from "@/lib/cn";
 import { Spinner } from "./spinner";
 
-export type ButtonVariant = "primary" | "secondary" | "ghost" | "danger";
+export type ButtonVariant = "primary" | "secondary" | "ghost" | "danger" | "gold";
 export type ButtonSize = "md" | "lg";
 
 const base =
-  "inline-flex min-h-11 items-center justify-center gap-2 rounded-md font-semibold transition-colors " +
+  "inline-flex min-h-11 items-center justify-center gap-2 rounded-xl font-semibold transition-all duration-200 active:scale-[0.98] " +
   "disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline-2 focus-visible:outline-offset-2 " +
   "focus-visible:outline-accent";
 
 const variants: Record<ButtonVariant, string> = {
-  primary: "bg-accent text-white hover:bg-accent-hover",
-  secondary: "border border-border bg-surface text-text hover:bg-surface-muted",
+  primary:
+    "bg-gradient-to-r from-[#7a1f33] to-[#982841] text-white shadow-sm hover:from-[#5c1425] hover:to-[#7a1f33] hover:shadow-md",
+  gold:
+    "bg-gradient-to-r from-[#c6923a] to-[#dfb15b] text-[#1f1918] shadow-md hover:from-[#b2802d] hover:to-[#cfa048] hover:shadow-lg",
+  secondary: "border border-border bg-surface text-text shadow-xs hover:border-accent/30 hover:bg-surface-muted",
   ghost: "text-accent hover:bg-accent-soft",
   danger: "bg-danger text-white hover:brightness-90",
 };

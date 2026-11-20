@@ -1,7 +1,7 @@
 "use client";
 
 import { useSyncExternalStore, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, Sparkles, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { LanguageSwitcher } from "@/components/features/language-switcher";
 import { Logo } from "@/components/layout/logo";
@@ -20,10 +20,10 @@ const LINKS = [
 export function SiteHeader() {
   const t = useTranslations("nav");
   const pathname = usePathname();
-  // menu is "open" only for the path it was opened on, so navigating closes it without an effect
   const [openOn, setOpenOn] = useState<string | null>(null);
   const open = openOn === pathname;
-  const setOpen = (v: boolean | ((o: boolean) => boolean)) => setOpenOn((cur) => ((typeof v === "function" ? v(cur === pathname) : v) ? pathname : null));
+  const setOpen = (v: boolean | ((o: boolean) => boolean)) =>
+    setOpenOn((cur) => ((typeof v === "function" ? v(cur === pathname) : v) ? pathname : null));
   const loggedIn = useSyncExternalStore(
     () => () => undefined,
     () => document.cookie.split("; ").some((c) => c.startsWith("dujon_in=")),
@@ -39,32 +39,39 @@ export function SiteHeader() {
       <Link href="/login" className={buttonClasses({ variant: "ghost" })}>
         {t("login")}
       </Link>
-      <Link href="/register" className={buttonClasses()}>
+      <Link href="/register" className={buttonClasses({ className: "px-5" })}>
+        <Sparkles aria-hidden="true" className="size-4 text-[#f0cf85]" />
         {t("register")}
       </Link>
     </>
   );
 
   return (
-    <header className="border-border bg-bg/95 sticky top-0 z-30 border-b backdrop-blur">
+    <header className="border-border/80 bg-bg/85 sticky top-0 z-40 border-b backdrop-blur-xl">
+      <div className="gold-hairline h-[2px] w-full opacity-75" aria-hidden="true" />
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <Logo />
         <nav aria-label={t("mainNav")} className="hidden items-center gap-1 md:flex">
-          {LINKS.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              aria-current={pathname === l.href ? "page" : undefined}
-              className={cn(
-                "hover:bg-surface-muted inline-flex min-h-11 items-center rounded-md px-3 font-medium",
-                pathname === l.href && "text-accent",
-              )}
-            >
-              {t(l.key)}
-            </Link>
-          ))}
+          {LINKS.map((l) => {
+            const active = pathname === l.href;
+            return (
+              <Link
+                key={l.href}
+                href={l.href}
+                aria-current={active ? "page" : undefined}
+                className={cn(
+                  "inline-flex min-h-11 items-center rounded-xl px-3.5 text-[15px] font-medium transition-colors",
+                  active
+                    ? "bg-accent-soft text-accent font-semibold"
+                    : "text-text/85 hover:bg-surface-muted hover:text-accent",
+                )}
+              >
+                {t(l.key)}
+              </Link>
+            );
+          })}
         </nav>
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-2.5 md:flex">
           <LanguageSwitcher />
           {cta}
         </div>
@@ -76,24 +83,30 @@ export function SiteHeader() {
             aria-controls="mobile-menu"
             aria-label={t("menu")}
             onClick={() => setOpen((o) => !o)}
-            className="hover:bg-surface-muted inline-flex size-11 items-center justify-center rounded-md"
+            className="hover:bg-surface-muted inline-flex size-11 items-center justify-center rounded-xl transition-colors"
           >
             {open ? <X aria-hidden="true" className="size-6" /> : <Menu aria-hidden="true" className="size-6" />}
           </button>
         </div>
       </div>
       {open ? (
-        <nav id="mobile-menu" aria-label={t("mainNav")} className="border-border bg-bg border-t px-4 pb-4 md:hidden">
+        <nav id="mobile-menu" aria-label={t("mainNav")} className="border-border bg-surface border-t px-4 pb-5 shadow-lg md:hidden">
           <ul className="flex flex-col py-2">
             {LINKS.map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className="flex min-h-12 items-center text-lg font-medium">
+                <Link
+                  href={l.href}
+                  className={cn(
+                    "flex min-h-12 items-center rounded-xl px-3 text-base font-medium transition-colors",
+                    pathname === l.href ? "bg-accent-soft text-accent font-semibold" : "hover:bg-surface-muted",
+                  )}
+                >
                   {t(l.key)}
                 </Link>
               </li>
             ))}
           </ul>
-          <div className="flex flex-col gap-3 pt-2">{cta}</div>
+          <div className="flex flex-col gap-2.5 pt-2">{cta}</div>
         </nav>
       ) : null}
     </header>

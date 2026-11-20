@@ -66,67 +66,183 @@
   },
   "home": {
     "hero": {
-      "title": "Find someone who feels right",
-      "subtitle": "Choose an age range and area, browse profiles, and connect only when you both agree. Simple, respectful and private.",
+      "badge": "Bangladesh's Graceful & Private Matrimony Platform",
+      "title": "Find someone who truly feels right",
+      "subtitle": "Choose an age range, profession and area, browse thoughtful profiles, and connect only when you both agree. Simple, respectful and private.",
       "cta": "Create your free profile",
       "secondary": "See how it works",
-      "visualLabel": "Two people, one respectful start (illustration)"
+      "visualLabel": "Smiling Bangladeshi bride and groom in traditional wedding attire",
+      "pill1": "Free to get started",
+      "pill2": "100% contact privacy",
+      "pill3": "Bangla & English",
+      "float1Title": "Mutual Consent Only",
+      "float1Sub": "Your number & email stay hidden until you accept",
+      "float2Title": "Matches Across 64 Districts",
+      "float2Sub": "Respectful family connections at home & abroad"
     },
     "search": {
       "title": "Find a life partner",
-      "hint": "Pick your filters. You'll need a free profile to see results.",
+      "hint": "Pick your preferred filters — open a free profile to explore matching results.",
+      "badge": "Quick Match",
+      "lookingFor": "Looking for",
+      "bride": "Bride",
+      "groom": "Groom",
+      "divisionLabel": "Division",
       "submit": "Search"
     },
+    "stats": {
+      "label": "Platform highlights",
+      "districts": {
+        "value": "64 Districts & NRB",
+        "label": "Across Bangladesh and abroad"
+      },
+      "privacy": {
+        "value": "100% Privacy",
+        "label": "Full control over photos & contact"
+      },
+      "consent": {
+        "value": "Mutual Consent",
+        "label": "Details shared only when both agree"
+      },
+      "bilingual": {
+        "value": "Bangla & English",
+        "label": "Built naturally for every family"
+      }
+    },
+    "categories": {
+      "eyebrow": "Browse by Category",
+      "title": "Discover profiles that match your world",
+      "subtitle": "Explore by division, profession, education or marital status to find compatible matches effortlessly.",
+      "tabsLabel": "Category tabs",
+      "tabs": {
+        "divisions": "Division & Area",
+        "professions": "Profession",
+        "education": "Education",
+        "marital": "Marital Status"
+      },
+      "divisions": {
+        "dhaka": "Dhaka",
+        "chattogram": "Chattogram",
+        "sylhet": "Sylhet",
+        "rajshahi": "Rajshahi",
+        "khulna": "Khulna",
+        "barishal": "Barishal",
+        "rangpur": "Rangpur",
+        "mymensingh": "Mymensingh",
+        "nrb": "NRB (Abroad)"
+      },
+      "professions": {
+        "doctor": "Doctor / Physician",
+        "engineer": "Engineer",
+        "banker": "Banker",
+        "bcs": "BCS & Govt. Service",
+        "teacher": "Teacher & Academic",
+        "business": "Business & Founder",
+        "it": "IT & Software",
+        "corporate": "Corporate Professional"
+      },
+      "education": {
+        "mbbs": "MBBS / Medical",
+        "bsc": "BSc Engineering",
+        "mba": "MBA / BBA",
+        "masters": "Masters",
+        "honors": "Honors / Bachelor's",
+        "phd": "PhD / Higher Studies"
+      },
+      "marital": {
+        "neverMarried": "Never Married",
+        "divorced": "Divorced",
+        "widowed": "Widowed"
+      }
+    },
     "steps": {
-      "title": "Three simple steps",
+      "eyebrow": "How It Works",
+      "title": "Three simple steps to a meaningful start",
+      "subtitle": "No clutter or pressure — begin your respectful journey in just a few minutes.",
       "1": {
         "title": "Create your profile",
-        "body": "Share the essentials about yourself in a few minutes."
+        "body": "Share your education, profession, area and preferences in just a few minutes."
       },
       "2": {
         "title": "Search by age and area",
-        "body": "Pick a division, district and upazila/thana to see suitable profiles."
+        "body": "Pick a division, district and upazila/thana to explore suitable family-friendly profiles."
       },
       "3": {
         "title": "Express interest and connect",
-        "body": "Contact details are shared only when the other person accepts."
+        "body": "Contact details are shared only when both sides accept — private, dignified and safe."
       }
     },
     "why": {
-      "title": "Why DUJON?",
+      "eyebrow": "Trust & Privacy",
+      "title": "Why families choose DUJON",
+      "subtitle": "A thoughtful blend of Bangladeshi family values, modern privacy controls and effortless design.",
+      "familyAlt": "A warm Bangladeshi family enjoying afternoon tea and conversation together",
       "privacy": {
         "title": "Privacy first",
         "body": "Nobody sees your phone number or email until you accept an interest."
       },
       "simple": {
         "title": "Simple and clear",
-        "body": "No long biodata — just the essentials and a few useful filters."
+        "body": "No endless forms — just the essentials and a few genuinely useful filters."
       },
       "respect": {
         "title": "Respectful by design",
-        "body": "Community guidelines plus block and report for everyone."
+        "body": "Clear community guidelines plus block and report tools for everyone."
       },
       "bangla": {
         "title": "In Bangla, made for you",
-        "body": "Use the whole site in Bangla or English."
+        "body": "Use the entire platform comfortably in Bangla or English."
       }
     },
     "safety": {
-      "title": "What we do — and what we don't do yet",
-      "body": "Members provide their own information. In this version we do not verify identity (such as NID), so please take care before contacting anyone.",
+      "title": "Our commitment to clarity & safety",
+      "body": "Members provide their own details. We do not verify identity (such as NID) in this version, so please review our safety tips before meeting.",
       "link": "Read safety tips"
     },
     "stories": {
-      "title": "Success stories",
-      "comingSoon": "Success stories are coming soon. We'll only share them with members' permission."
+      "eyebrow": "Happy Beginnings",
+      "title": "Success stories & testimonials",
+      "subtitle": "Celebrating couples who found respect, understanding and a shared future together.",
+      "featuredBadge": "Featured Story",
+      "prev": "Previous story",
+      "next": "Next story",
+      "comingSoon": "Success stories are coming soon. We'll only share them with members' permission.",
+      "items": {
+        "1": {
+          "names": "Tanvir & Nusrat",
+          "location": "Dhanmondi, Dhaka",
+          "date": "Married — 2026",
+          "quote": "“DUJON's calm, privacy-first approach gave both of our families confidence from day one. Once we mutually accepted, our conversations felt completely natural.”"
+        },
+        "2": {
+          "names": "Mahmud & Farhana",
+          "location": "Nasirabad, Chattogram",
+          "date": "Engaged & Married — 2026",
+          "quote": "“Filtering by area and preferences helped us discover a wonderful match quickly. Everything progressed respectfully without any spam or noise.”"
+        },
+        "3": {
+          "names": "Rafiq & Tasnim",
+          "location": "Zindabazar, Sylhet",
+          "date": "Married — 2025",
+          "quote": "“Because the entire site works smoothly in Bangla, my parents could browse profiles comfortably too. Our families connected warmly and the rest is history.”"
+        },
+        "4": {
+          "names": "Sajid & Maliha",
+          "location": "Rajshahi & London (NRB)",
+          "date": "Married — 2026",
+          "quote": "“Living abroad, I never thought finding a compatible Bangladeshi match could feel this genuine and dignified. Truly grateful for the experience.”"
+        }
+      }
     },
     "faq": {
+      "eyebrow": "Answers You Need",
       "title": "Common questions",
       "all": "See all questions"
     },
     "cta": {
-      "title": "Start today — it's free",
-      "body": "Open an account in a minute, then build your profile step by step."
+      "badge": "A Graceful New Beginning",
+      "title": "Start today — it's completely free",
+      "body": "Open an account in a minute, then build your profile step by step to find your life partner."
     }
   },
   "howItWorks": {

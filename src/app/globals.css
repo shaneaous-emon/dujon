@@ -1,31 +1,35 @@
 @import "tailwindcss";
 
 /*
- * DUJON design tokens (docs/04 §7.1). Contrast values are approximate and must be
- * validated with a checker before design freeze.
+ * DUJON Luxury Bangladeshi Matrimony Design System
+ * Warm ivory canvas, royal Benarasi maroon, heritage zari gold, and deep espresso ink.
  */
 @theme {
   --color-bg: #fbf8f3;
   --color-surface: #ffffff;
-  --color-surface-muted: #f3eee7;
-  --color-border: #e5ddd3;
-  --color-text: #1f1b1a;
-  --color-text-muted: #5e5754;
-  --color-accent: #7a2e3b;
-  --color-accent-hover: #63242f;
-  --color-accent-soft: #f4e4e6;
-  --color-success: #2f6b4f;
-  --color-success-soft: #e3f1ea;
+  --color-surface-muted: #f4eee6;
+  --color-border: #e7ddd0;
+  --color-text: #1f1918;
+  --color-text-muted: #5d534f;
+  --color-accent: #7a1f33;
+  --color-accent-hover: #5c1425;
+  --color-accent-soft: #fae8ec;
+  --color-gold: #c6923a;
+  --color-gold-hover: #a87826;
+  --color-gold-soft: #fdf5e4;
+  --color-success: #1f6b50;
+  --color-success-soft: #e3f3ec;
   --color-warning: #8a5a00;
   --color-warning-soft: #fff4db;
   --color-danger: #b3261e;
   --color-danger-soft: #fbe7e5;
 
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
 
-  --shadow-card: 0 1px 2px rgb(31 27 26 / 6%), 0 4px 12px rgb(31 27 26 / 6%);
+  --shadow-card: 0 2px 6px rgb(31 25 24 / 4%), 0 10px 28px rgb(122 31 51 / 6%);
+  --shadow-elevated: 0 12px 32px rgb(31 25 24 / 10%), 0 24px 64px rgb(122 31 51 / 12%);
 
   --font-sans: var(--font-bn), var(--font-en), ui-sans-serif, system-ui, sans-serif;
 
@@ -35,7 +39,8 @@
 @layer base {
   html {
     -webkit-text-size-adjust: 100%;
-    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
     scroll-padding-bottom: 6rem;
   }
   body {
@@ -43,12 +48,13 @@
     color: var(--color-text);
     font-family: var(--font-sans);
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.65;
     min-height: 100dvh;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
   }
   html[lang="en"] body {
-    line-height: 1.5;
+    line-height: 1.55;
   }
   /* Bangla: never uppercase or letter-space (docs/04 §7.2). */
   html[lang="bn"] * {
@@ -58,7 +64,7 @@
   h2,
   h3,
   h4 {
-    line-height: 1.25;
+    line-height: 1.22;
     font-weight: 700;
     overflow-wrap: anywhere;
   }
@@ -78,6 +84,48 @@
   }
 }
 
+@keyframes ken-burns {
+  0% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: scale(1.07) translate3d(-1%, -0.8%, 0);
+  }
+  100% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
 @layer components {
   .skip-link {
     position: absolute;
@@ -92,5 +140,51 @@
   }
   .skip-link:focus {
     top: 1rem;
+  }
+
+  .animate-ken-burns {
+    animation: ken-burns 26s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .animate-float {
+    animation: float-slow 5.5s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float-slow 6.5s ease-in-out 1.4s infinite;
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .glass-panel {
+    background: rgb(255 255 255 / 92%);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .luxury-hero-scrim {
+    background:
+      linear-gradient(95deg, rgb(28 11 16 / 88%) 0%, rgb(48 16 25 / 72%) 48%, rgb(28 11 16 / 28%) 100%),
+      linear-gradient(180deg, rgb(28 11 16 / 35%) 0%, transparent 35%, rgb(28 11 16 / 65%) 100%);
+  }
+
+  .luxury-cta-bg {
+    background:
+      radial-gradient(circle at 18% 20%, rgb(198 146 58 / 28%), transparent 46%),
+      radial-gradient(circle at 86% 80%, rgb(198 146 58 / 22%), transparent 42%),
+      linear-gradient(135deg, #5c1425 0%, #7a1f33 52%, #4a101e 100%);
+  }
+
+  .pattern-jamdani {
+    background-image: radial-gradient(rgb(198 146 58 / 18%) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .gold-hairline {
+    background: linear-gradient(90deg, transparent, #c6923a, #e4be73, #c6923a, transparent);
   }
 }

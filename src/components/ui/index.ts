@@ -16,3 +16,4 @@ export * from "./empty-state";
 export * from "./dialog";
 export * from "./tabs";
 export * from "./accordion";
+export * from "./reveal";
