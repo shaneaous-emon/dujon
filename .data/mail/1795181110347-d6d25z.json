@@ -1,9 +1,0 @@
-{
-  "to": "demo+female16@example.invalid",
-  "template": "interest-received",
-  "locale": "bn",
-  "subject": "দুজন: নতুন একজন আপনার প্রতি আগ্রহ দেখিয়েছেন",
-  "text": "একজন সদস্য আপনার প্রতি আগ্রহ দেখিয়েছেন। প্রোফাইল দেখতে লগইন করুন।\n\nআপনি গ্রহণ না করা পর্যন্ত কারো সঙ্গে আপনার যোগাযোগের তথ্য শেয়ার হবে না।\n\nআগ্রহ দেখুন: http://localhost:3000/dashboard/interests?tab=received\n\n— DUJON",
-  "html": "<!doctype html><html lang=\"bn\"><body style=\"margin:0;background:#fbf8f3;font-family:'Noto Sans Bengali',Inter,Arial,sans-serif;color:#1f1b1a\">\n<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tr><td align=\"center\" style=\"padding:24px 12px\">\n<table role=\"presentation\" width=\"480\" style=\"max-width:480px;background:#fff;border-radius:12px;padding:28px\">\n<tr><td style=\"font-size:22px;font-weight:700;color:#7a2e3b\">দুজন</td></tr>\n<tr><td style=\"padding-top:16px;font-size:16px;line-height:1.6\">একজন সদস্য আপনার প্রতি আগ্রহ দেখিয়েছেন। প্রোফাইল দেখতে লগইন করুন।</td></tr><tr><td style=\"padding-top:16px;font-size:16px;line-height:1.6\">আপনি গ্রহণ না করা পর্যন্ত কারো সঙ্গে আপনার যোগাযোগের তথ্য শেয়ার হবে না।</td></tr>\n<tr><td style=\"padding-top:24px\"><a href=\"http://localhost:3000/dashboard/interests?tab=received\" style=\"display:inline-block;background:#7a2e3b;color:#fff;text-decoration:none;padding:12px 22px;border-radius:8px;font-weight:600\">আগ্রহ দেখুন</a></td></tr>\n</table></td></tr></table></body></html>",
-  "url": "http://localhost:3000/dashboard/interests?tab=received"
-}
