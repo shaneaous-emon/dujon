@@ -1,0 +1,78 @@
+{
+  "common": {
+    "brand": "DUJON",
+    "tagline": "Find someone who feels right.",
+    "save": "Save",
+    "saveContinue": "Save and continue",
+    "back": "Back",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close",
+    "optional": "(optional)",
+    "required": "(required)",
+    "loading": "Loading…",
+    "yearsOld": "{age, number} years",
+    "skip": "Skip for now",
+    "skipToContent": "Skip to main content",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "characterCount": "{count, number}/{max, number} characters",
+    "selectPlaceholder": "Select",
+    "underConstruction": "DUJON is being built. It will launch very soon."
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "safety": "Safety",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "login": "Log in",
+    "register": "Create profile",
+    "search": "Search",
+    "interests": "Interests",
+    "saved": "Saved",
+    "dashboard": "Dashboard",
+    "myProfile": "My profile",
+    "settings": "Settings",
+    "logout": "Log out",
+    "menu": "Menu",
+    "language": "Language",
+    "mainNav": "Main menu"
+  },
+  "language": {
+    "bn": "বাংলা",
+    "en": "English",
+    "switchTo": "Change language"
+  },
+  "footer": {
+    "terms": "Terms and Conditions",
+    "privacy": "Privacy Policy",
+    "guidelines": "Community Guidelines",
+    "copyright": "© {year, number, ::group-off} DUJON. All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "title": "Find someone who feels right",
+      "subtitle": "Choose an age range and area, browse profiles, and connect only when you both agree. Simple, respectful and private.",
+      "cta": "Create your free profile",
+      "secondary": "See how it works"
+    }
+  },
+  "errors": {
+    "required": "This field is required.",
+    "generic": "Something went wrong. Please try again. (Reference: {requestId})",
+    "notFound": {
+      "title": "Page not found",
+      "body": "The page you are looking for doesn't exist or has been moved.",
+      "home": "Back to the home page"
+    },
+    "formSummary": "{count, plural, one {# field needs attention} other {# fields need attention}}"
+  },
+  "meta": {
+    "home": {
+      "title": "DUJON — Bangladeshi Matrimonial Website",
+      "description": "Find a life partner in Bangladesh by age and area. Contact is shared only when you both agree — free, private and respectful."
+    },
+    "titleTemplate": "%s — DUJON",
+    "notFound": "Page not found"
+  }
+}

@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+/*
+ * DUJON design tokens (docs/04 §7.1). Contrast values are approximate and must be
+ * validated with a checker before design freeze.
+ */
+@theme {
+  --color-bg: #fbf8f3;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f3eee7;
+  --color-border: #e5ddd3;
+  --color-text: #1f1b1a;
+  --color-text-muted: #5e5754;
+  --color-accent: #7a2e3b;
+  --color-accent-hover: #63242f;
+  --color-accent-soft: #f4e4e6;
+  --color-success: #2f6b4f;
+  --color-success-soft: #e3f1ea;
+  --color-warning: #8a5a00;
+  --color-warning-soft: #fff4db;
+  --color-danger: #b3261e;
+  --color-danger-soft: #fbe7e5;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --shadow-card: 0 1px 2px rgb(31 27 26 / 6%), 0 4px 12px rgb(31 27 26 / 6%);
+
+  --font-sans: var(--font-bn), var(--font-en), ui-sans-serif, system-ui, sans-serif;
+
+  --breakpoint-3xl: 90rem; /* 1440px */
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5rem;
+    scroll-padding-bottom: 6rem;
+  }
+  body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    min-height: 100dvh;
+    text-rendering: optimizeLegibility;
+  }
+  html[lang="en"] body {
+    line-height: 1.5;
+  }
+  /* Bangla: never uppercase or letter-space (docs/04 §7.2). */
+  html[lang="bn"] * {
+    letter-spacing: normal;
+  }
+  h1, h2, h3, h4 {
+    line-height: 1.25;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -10rem;
+    z-index: 100;
+    background: var(--color-surface);
+    color: var(--color-accent);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+  }
+  .skip-link:focus {
+    top: 1rem;
+  }
+}
