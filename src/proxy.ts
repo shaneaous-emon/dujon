@@ -19,11 +19,7 @@ export default function proxy(request: NextRequest) {
   const { pathname, search } = request.nextUrl;
   const remembered = request.cookies.get(LOCALE_COOKIE)?.value;
 
-  if (
-    remembered === "en" &&
-    !hasLocalePrefix(pathname, "en") &&
-    !hasLocalePrefix(pathname, "bn")
-  ) {
+  if (remembered === "en" && !hasLocalePrefix(pathname, "en") && !hasLocalePrefix(pathname, "bn")) {
     const url = request.nextUrl.clone();
     url.pathname = pathname === "/" ? "/en" : `/en${pathname}`;
     url.search = search;

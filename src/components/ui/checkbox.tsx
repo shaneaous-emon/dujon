@@ -17,7 +17,7 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(function Che
         id={id}
         type="checkbox"
         aria-invalid={invalid || undefined}
-        className="mt-1 size-5 shrink-0 accent-accent"
+        className="accent-accent mt-1 size-5 shrink-0"
         {...props}
       />
       <span>{label}</span>

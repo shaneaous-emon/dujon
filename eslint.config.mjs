@@ -12,11 +12,23 @@ const eslintConfig = defineConfig([
     rules: {
       "react/jsx-no-literals": [
         "error",
-        { noStrings: false, ignoreProps: true, allowedStrings: ["|", "/", "·", "—", "–", "…", "(", ")", ":"] },
+        {
+          noStrings: false,
+          ignoreProps: true,
+          allowedStrings: ["|", "/", "·", "—", "–", "…", "(", ")", ":"],
+        },
       ],
     },
   },
-  globalIgnores([".next/**", "out/**", "build/**", "next-env.d.ts", "coverage/**", "playwright-report/**", "test-results/**"]),
+  globalIgnores([
+    ".next/**",
+    "out/**",
+    "build/**",
+    "next-env.d.ts",
+    "coverage/**",
+    "playwright-report/**",
+    "test-results/**",
+  ]),
 ]);
 
 export default eslintConfig;

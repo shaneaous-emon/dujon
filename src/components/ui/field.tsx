@@ -30,17 +30,17 @@ export function Field({ id, label, required, optional, help, error, className, c
     <div className={cn("flex flex-col gap-1.5", className)}>
       <label htmlFor={id} className="font-medium">
         {label}
-        {required ? <span className="ms-1 text-sm font-normal text-text-muted">{t("required")}</span> : null}
-        {optional ? <span className="ms-1 text-sm font-normal text-text-muted">{t("optional")}</span> : null}
+        {required ? <span className="text-text-muted ms-1 text-sm font-normal">{t("required")}</span> : null}
+        {optional ? <span className="text-text-muted ms-1 text-sm font-normal">{t("optional")}</span> : null}
       </label>
       {children}
       {help ? (
-        <p id={`${id}-help`} className="text-sm text-text-muted">
+        <p id={`${id}-help`} className="text-text-muted text-sm">
           {help}
         </p>
       ) : null}
       {error ? (
-        <p id={`${id}-error`} className="text-sm font-medium text-danger">
+        <p id={`${id}-error`} className="text-danger text-sm font-medium">
           {error}
         </p>
       ) : null}

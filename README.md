@@ -6,11 +6,11 @@ Bangla-first, bilingual matchmaking website for Bangladesh. Next.js + TypeScript
 
 ## Status
 
-| Milestone | Status |
-|---|---|
-| M1 Foundation (tooling, design system, Bangla/English routing) | ✅ Done |
-| M2 Public site + SEO | Next |
-| M3–M9 | Not started — see `docs/11-development-roadmap.md` |
+| Milestone                                                      | Status                                             |
+| -------------------------------------------------------------- | -------------------------------------------------- |
+| M1 Foundation (tooling, design system, Bangla/English routing) | ✅ Done                                            |
+| M2 Public site + SEO                                           | Next                                               |
+| M3–M9                                                          | Not started — see `docs/11-development-roadmap.md` |
 
 ## Requirements
 
@@ -28,16 +28,16 @@ pnpm dev                        # http://localhost:3000  (Bangla)  ·  /en (Engl
 
 ## Scripts
 
-| Command | What it does |
-|---|---|
-| `pnpm dev` | Development server |
-| `pnpm build` / `pnpm start` | Production build / serve |
-| `pnpm lint` | ESLint (includes the "no hard-coded text" rule) |
-| `pnpm typecheck` | Route type generation + TypeScript |
-| `pnpm i18n:check` | Bangla/English message files must match |
-| `pnpm test` | Unit tests (Vitest) |
-| `pnpm test:e2e` | Browser tests (Playwright; run `pnpm exec playwright install chromium` once) |
-| `pnpm verify` | Everything above except E2E |
+| Command                     | What it does                                                                 |
+| --------------------------- | ---------------------------------------------------------------------------- |
+| `pnpm dev`                  | Development server                                                           |
+| `pnpm build` / `pnpm start` | Production build / serve                                                     |
+| `pnpm lint`                 | ESLint (includes the "no hard-coded text" rule)                              |
+| `pnpm typecheck`            | Route type generation + TypeScript                                           |
+| `pnpm i18n:check`           | Bangla/English message files must match                                      |
+| `pnpm test`                 | Unit tests (Vitest)                                                          |
+| `pnpm test:e2e`             | Browser tests (Playwright; run `pnpm exec playwright install chromium` once) |
+| `pnpm verify`               | Everything above except E2E                                                  |
 
 ## Project structure
 

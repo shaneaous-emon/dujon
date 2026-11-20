@@ -11,9 +11,23 @@ const tones: Record<Tone, string> = {
 };
 
 /** Text-bearing badge/chip — colour is never the only signal. */
-export function Badge({ tone = "neutral", children, className }: { tone?: Tone; children: ReactNode; className?: string }) {
+export function Badge({
+  tone = "neutral",
+  children,
+  className,
+}: {
+  tone?: Tone;
+  children: ReactNode;
+  className?: string;
+}) {
   return (
-    <span className={cn("inline-flex items-center rounded-full px-3 py-1 text-sm font-medium", tones[tone], className)}>
+    <span
+      className={cn(
+        "inline-flex items-center rounded-full px-3 py-1 text-sm font-medium",
+        tones[tone],
+        className,
+      )}
+    >
       {children}
     </span>
   );

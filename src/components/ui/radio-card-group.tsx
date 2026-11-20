@@ -34,9 +34,19 @@ export function RadioCardGroup({
   className,
 }: RadioCardGroupProps) {
   return (
-    <fieldset className={cn("flex flex-col gap-2", className)} aria-describedby={describedBy} aria-invalid={invalid || undefined}>
+    <fieldset
+      className={cn("flex flex-col gap-2", className)}
+      aria-describedby={describedBy}
+      aria-invalid={invalid || undefined}
+    >
       <legend className="mb-1 font-medium">{legend}</legend>
-      <div className={cn("grid gap-3", columns === 2 && "grid-cols-2", columns === 3 && "grid-cols-1 sm:grid-cols-3")}>
+      <div
+        className={cn(
+          "grid gap-3",
+          columns === 2 && "grid-cols-2",
+          columns === 3 && "grid-cols-1 sm:grid-cols-3",
+        )}
+      >
         {options.map((option) => {
           const id = `${name}-${option.value}`;
           return (
@@ -44,8 +54,8 @@ export function RadioCardGroup({
               key={option.value}
               htmlFor={id}
               className={cn(
-                "flex min-h-14 cursor-pointer flex-col justify-center rounded-md border border-border bg-surface px-4 py-3",
-                "has-checked:border-accent has-checked:bg-accent-soft has-focus-visible:outline-2 has-focus-visible:outline-accent",
+                "border-border bg-surface flex min-h-14 cursor-pointer flex-col justify-center rounded-md border px-4 py-3",
+                "has-checked:border-accent has-checked:bg-accent-soft has-focus-visible:outline-accent has-focus-visible:outline-2",
               )}
             >
               <span className="flex items-center gap-3">
@@ -54,7 +64,7 @@ export function RadioCardGroup({
                   type="radio"
                   name={name}
                   value={option.value}
-                  className="size-5 accent-accent"
+                  className="accent-accent size-5"
                   {...(value !== undefined ? { checked: value === option.value } : {})}
                   defaultChecked={defaultValue === option.value}
                   onChange={() => onValueChange?.(option.value)}
@@ -62,7 +72,7 @@ export function RadioCardGroup({
                 <span className="font-medium">{option.label}</span>
               </span>
               {option.description ? (
-                <span className="ms-8 mt-1 text-sm text-text-muted">{option.description}</span>
+                <span className="text-text-muted ms-8 mt-1 text-sm">{option.description}</span>
               ) : null}
             </label>
           );

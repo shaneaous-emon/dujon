@@ -14,7 +14,10 @@ export interface AccordionItem {
 export function Accordion({ items, headingLevel = 3 }: { items: AccordionItem[]; headingLevel?: 2 | 3 | 4 }) {
   const Heading = `h${headingLevel}` as "h2" | "h3" | "h4";
   return (
-    <RadixAccordion.Root type="multiple" className="divide-y divide-border rounded-lg border border-border bg-surface">
+    <RadixAccordion.Root
+      type="multiple"
+      className="divide-border border-border bg-surface divide-y rounded-lg border"
+    >
       {items.map((item) => (
         <RadixAccordion.Item key={item.id} value={item.id}>
           <RadixAccordion.Header asChild>
@@ -28,7 +31,7 @@ export function Accordion({ items, headingLevel = 3 }: { items: AccordionItem[];
               </RadixAccordion.Trigger>
             </Heading>
           </RadixAccordion.Header>
-          <RadixAccordion.Content className="px-5 pb-5 text-text-muted">{item.answer}</RadixAccordion.Content>
+          <RadixAccordion.Content className="text-text-muted px-5 pb-5">{item.answer}</RadixAccordion.Content>
         </RadixAccordion.Item>
       ))}
     </RadixAccordion.Root>

@@ -24,14 +24,18 @@ export function Tabs({
   label: string;
 }) {
   return (
-    <RadixTabs.Root value={value} defaultValue={defaultValue ?? items[0]?.value} onValueChange={onValueChange}>
-      <RadixTabs.List aria-label={label} className="flex gap-1 overflow-x-auto border-b border-border">
+    <RadixTabs.Root
+      value={value}
+      defaultValue={defaultValue ?? items[0]?.value}
+      onValueChange={onValueChange}
+    >
+      <RadixTabs.List aria-label={label} className="border-border flex gap-1 overflow-x-auto border-b">
         {items.map((item) => (
           <RadixTabs.Trigger
             key={item.value}
             value={item.value}
             className={cn(
-              "min-h-11 shrink-0 border-b-2 border-transparent px-4 font-medium text-text-muted",
+              "text-text-muted min-h-11 shrink-0 border-b-2 border-transparent px-4 font-medium",
               "data-[state=active]:border-accent data-[state=active]:text-accent",
             )}
           >

@@ -36,7 +36,7 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(function 
         {...props}
       />
       {showCount && maxLength ? (
-        <p className="self-end text-sm text-text-muted" aria-live="polite">
+        <p className="text-text-muted self-end text-sm" aria-live="polite">
           {t("characterCount", { count: current, max: maxLength })}
         </p>
       ) : null}

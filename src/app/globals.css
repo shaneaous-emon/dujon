@@ -54,7 +54,10 @@
   html[lang="bn"] * {
     letter-spacing: normal;
   }
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     line-height: 1.25;
     font-weight: 700;
     overflow-wrap: anywhere;
@@ -64,7 +67,9 @@
     outline-offset: 2px;
   }
   @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       animation-duration: 0.01ms !important;
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;

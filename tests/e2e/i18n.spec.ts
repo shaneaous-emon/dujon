@@ -2,7 +2,10 @@ import { expect, test } from "@playwright/test";
 
 test.describe("Language (FR-I18N-001–003)", () => {
   test("TC-012 Bangla is the default even when the browser prefers English", async ({ browser }) => {
-    const context = await browser.newContext({ locale: "en-US", extraHTTPHeaders: { "Accept-Language": "en-US,en;q=0.9" } });
+    const context = await browser.newContext({
+      locale: "en-US",
+      extraHTTPHeaders: { "Accept-Language": "en-US,en;q=0.9" },
+    });
     const page = await context.newPage();
     await page.goto("/");
     await expect(page.locator("html")).toHaveAttribute("lang", "bn");

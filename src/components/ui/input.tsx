@@ -15,6 +15,11 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
   ref,
 ) {
   return (
-    <input ref={ref} aria-invalid={invalid || undefined} className={cn(controlClasses, className)} {...props} />
+    <input
+      ref={ref}
+      aria-invalid={invalid || undefined}
+      className={cn(controlClasses, className)}
+      {...props}
+    />
   );
 });

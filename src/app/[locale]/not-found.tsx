@@ -7,7 +7,7 @@ export default function LocalizedNotFound() {
   return (
     <main id="main" className="mx-auto flex max-w-xl flex-col items-center px-4 py-24 text-center">
       <h1 className="text-3xl">{t("title")}</h1>
-      <p className="mt-4 text-text-muted">{t("body")}</p>
+      <p className="text-text-muted mt-4">{t("body")}</p>
       <Link href="/" className={buttonClasses({ className: "mt-8" })}>
         {t("home")}
       </Link>

@@ -15,12 +15,15 @@ export default function HomePage({ params }: PageProps<"/[locale]">) {
   return (
     <>
       <header className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-        <span className="text-2xl font-bold text-accent">{t("common.brand")}</span>
+        <span className="text-accent text-2xl font-bold">{t("common.brand")}</span>
         <LanguageSwitcher />
       </header>
-      <main id="main" className="mx-auto flex max-w-3xl flex-col items-center px-4 py-16 text-center sm:py-24">
+      <main
+        id="main"
+        className="mx-auto flex max-w-3xl flex-col items-center px-4 py-16 text-center sm:py-24"
+      >
         <h1 className="text-3xl sm:text-5xl">{t("home.hero.title")}</h1>
-        <p className="mt-6 max-w-2xl text-lg text-text-muted">{t("home.hero.subtitle")}</p>
+        <p className="text-text-muted mt-6 max-w-2xl text-lg">{t("home.hero.subtitle")}</p>
         <div className="mt-10 flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
           <span className={buttonClasses({ size: "lg" })} aria-disabled="true">
             {t("home.hero.cta")}

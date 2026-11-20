@@ -29,7 +29,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
         return (
           <span key={locale} className="flex items-center">
             {index > 0 ? (
-              <span aria-hidden="true" className="px-1 text-text-muted">
+              <span aria-hidden="true" className="text-text-muted px-1">
                 |
               </span>
             ) : null}
