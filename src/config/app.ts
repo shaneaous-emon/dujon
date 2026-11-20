@@ -37,6 +37,8 @@ export const appConfig = {
   photoMinDimension: intFromEnv("PHOTO_MIN_DIMENSION", 400),
   termsVersion: process.env.TERMS_VERSION ?? "2026-11-v1",
   privacyVersion: process.env.PRIVACY_VERSION ?? "2026-11-v1",
+  /** Shown on legal pages as the "last updated" date (ISO date). */
+  legalUpdated: process.env.LEGAL_UPDATED ?? "2026-11-20",
 } as const;
 
 export const isProduction = appConfig.appEnv === "production";

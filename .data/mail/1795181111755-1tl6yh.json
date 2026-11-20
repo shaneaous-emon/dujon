@@ -1,0 +1,9 @@
+{
+  "to": "e2e+1795181104736@example.invalid",
+  "template": "interest-accepted",
+  "locale": "en",
+  "subject": "DUJON: Your interest was accepted",
+  "text": "Your interest was accepted. Log in to see the contact details.\n\nMeet in a public place first, tell your family, and never send money.\n\nView connection: http://localhost:3000/en/dashboard/interests?tab=connections\n\n— DUJON",
+  "html": "<!doctype html><html lang=\"en\"><body style=\"margin:0;background:#fbf8f3;font-family:'Noto Sans Bengali',Inter,Arial,sans-serif;color:#1f1b1a\">\n<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tr><td align=\"center\" style=\"padding:24px 12px\">\n<table role=\"presentation\" width=\"480\" style=\"max-width:480px;background:#fff;border-radius:12px;padding:28px\">\n<tr><td style=\"font-size:22px;font-weight:700;color:#7a2e3b\">DUJON</td></tr>\n<tr><td style=\"padding-top:16px;font-size:16px;line-height:1.6\">Your interest was accepted. Log in to see the contact details.</td></tr><tr><td style=\"padding-top:16px;font-size:16px;line-height:1.6\">Meet in a public place first, tell your family, and never send money.</td></tr>\n<tr><td style=\"padding-top:24px\"><a href=\"http://localhost:3000/en/dashboard/interests?tab=connections\" style=\"display:inline-block;background:#7a2e3b;color:#fff;text-decoration:none;padding:12px 22px;border-radius:8px;font-weight:600\">View connection</a></td></tr>\n</table></td></tr></table></body></html>",
+  "url": "http://localhost:3000/en/dashboard/interests?tab=connections"
+}

@@ -1,0 +1,9 @@
+{
+  "to": "e2e+1795181005789@example.invalid",
+  "template": "verify-email",
+  "locale": "en",
+  "subject": "DUJON: Confirm your email",
+  "text": "Press the button below to confirm your email. The link works for 24 hours.\n\nIf you didn't create an account, you can ignore this message.\n\nConfirm email: http://localhost:3000/en/verify-email?token=LiDg9bRHApAc554tQ6b2sbElrfoaSeOXjrlj1VejhZU\n\n— DUJON",
+  "html": "<!doctype html><html lang=\"en\"><body style=\"margin:0;background:#fbf8f3;font-family:'Noto Sans Bengali',Inter,Arial,sans-serif;color:#1f1b1a\">\n<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tr><td align=\"center\" style=\"padding:24px 12px\">\n<table role=\"presentation\" width=\"480\" style=\"max-width:480px;background:#fff;border-radius:12px;padding:28px\">\n<tr><td style=\"font-size:22px;font-weight:700;color:#7a2e3b\">DUJON</td></tr>\n<tr><td style=\"padding-top:16px;font-size:16px;line-height:1.6\">Press the button below to confirm your email. The link works for 24 hours.</td></tr><tr><td style=\"padding-top:16px;font-size:16px;line-height:1.6\">If you didn&#39;t create an account, you can ignore this message.</td></tr>\n<tr><td style=\"padding-top:24px\"><a href=\"http://localhost:3000/en/verify-email?token=LiDg9bRHApAc554tQ6b2sbElrfoaSeOXjrlj1VejhZU\" style=\"display:inline-block;background:#7a2e3b;color:#fff;text-decoration:none;padding:12px 22px;border-radius:8px;font-weight:600\">Confirm email</a></td></tr>\n</table></td></tr></table></body></html>",
+  "url": "http://localhost:3000/en/verify-email?token=LiDg9bRHApAc554tQ6b2sbElrfoaSeOXjrlj1VejhZU"
+}

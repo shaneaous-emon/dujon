@@ -1,0 +1,18 @@
+import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { use } from "react";
+import { LegalPage } from "@/components/features/legal-page";
+import { appConfig } from "@/config/app";
+import { buildMetadata } from "@/lib/seo";
+
+export async function generateMetadata({ params }: PageProps<"/[locale]/terms">): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta.terms" });
+  return buildMetadata({ locale, path: "/terms", title: t("title"), description: t("description") });
+}
+
+export default function Page({ params }: PageProps<"/[locale]/terms">) {
+  const { locale } = use(params);
+  setRequestLocale(locale);
+  return <LegalPage kind="terms" sections={12} version={appConfig.termsVersion} />;
+}

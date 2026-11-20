@@ -15,7 +15,7 @@ test.describe("Language (FR-I18N-001–003)", () => {
 
   test("TC-013 switcher keeps the current path and query", async ({ page }) => {
     await page.goto("/?ref=test");
-    await page.getByRole("link", { name: "English" }).click();
+    await page.getByRole("banner").getByRole("link", { name: "English" }).click();
     await expect(page).toHaveURL(/\/en\?ref=test$/);
     await expect(page.locator("html")).toHaveAttribute("lang", "en");
     await expect(page.getByRole("heading", { level: 1 })).toHaveText("Find someone who feels right");
@@ -23,12 +23,12 @@ test.describe("Language (FR-I18N-001–003)", () => {
 
   test("TC-014 an explicit English choice is remembered on the next visit", async ({ page }) => {
     await page.goto("/");
-    await page.getByRole("link", { name: "English" }).click();
+    await page.getByRole("banner").getByRole("link", { name: "English" }).click();
     await expect(page).toHaveURL(/\/en$/);
     await page.goto("/");
     await expect(page).toHaveURL(/\/en$/);
     // Switching back to Bangla is remembered too.
-    await page.getByRole("link", { name: "বাংলা" }).click();
+    await page.getByRole("banner").getByRole("link", { name: "বাংলা" }).click();
     await expect(page.locator("html")).toHaveAttribute("lang", "bn");
     await page.goto("/");
     await expect(page.locator("html")).toHaveAttribute("lang", "bn");

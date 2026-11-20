@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
@@ -23,6 +23,13 @@ const fontEn = localFont({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  themeColor: "#7a2e3b",
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -34,6 +41,10 @@ export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Pr
     metadataBase: new URL(appConfig.appUrl),
     title: { default: t("home.title"), template: t("titleTemplate") },
     description: t("home.description"),
+    applicationName: "DUJON",
+    appleWebApp: { capable: true, title: "DUJON", statusBarStyle: "default" },
+    icons: { apple: "/icons/apple-touch-icon.png" },
+    formatDetection: { telephone: false },
   };
 }
 

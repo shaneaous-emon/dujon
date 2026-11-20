@@ -18,7 +18,13 @@
     "hidePassword": "Hide password",
     "characterCount": "{count, number}/{max, number} characters",
     "selectPlaceholder": "Select",
-    "underConstruction": "DUJON is being built. It will launch very soon."
+    "underConstruction": "DUJON is being built. It will launch very soon.",
+    "edit": "Edit",
+    "view": "View",
+    "more": "More",
+    "yes": "Yes",
+    "no": "No",
+    "free": "Free"
   },
   "nav": {
     "howItWorks": "How it works",
@@ -32,11 +38,15 @@
     "saved": "Saved",
     "dashboard": "Dashboard",
     "myProfile": "My profile",
+    "preferences": "Preferences",
     "settings": "Settings",
     "logout": "Log out",
     "menu": "Menu",
     "language": "Language",
-    "mainNav": "Main menu"
+    "mainNav": "Main menu",
+    "memberNav": "Member menu",
+    "home": "DUJON — go to home page",
+    "account": "Account"
   },
   "language": {
     "bn": "বাংলা",
@@ -47,25 +57,755 @@
     "terms": "Terms and Conditions",
     "privacy": "Privacy Policy",
     "guidelines": "Community Guidelines",
-    "copyright": "© {year, number, ::group-off} DUJON. All rights reserved."
+    "copyright": "© {year, number, ::group-off} DUJON. All rights reserved.",
+    "about": "About DUJON",
+    "aboutText": "A simple, private and respectful matrimony site for Bangladesh.",
+    "help": "Help",
+    "legal": "Legal",
+    "noVerify": "DUJON does not verify members' identity in this version."
   },
   "home": {
     "hero": {
       "title": "Find someone who feels right",
       "subtitle": "Choose an age range and area, browse profiles, and connect only when you both agree. Simple, respectful and private.",
       "cta": "Create your free profile",
-      "secondary": "See how it works"
+      "secondary": "See how it works",
+      "visualLabel": "Two people, one respectful start (illustration)"
+    },
+    "search": {
+      "title": "Find a life partner",
+      "hint": "Pick your filters. You'll need a free profile to see results.",
+      "submit": "Search"
+    },
+    "steps": {
+      "title": "Three simple steps",
+      "1": {
+        "title": "Create your profile",
+        "body": "Share the essentials about yourself in a few minutes."
+      },
+      "2": {
+        "title": "Search by age and area",
+        "body": "Pick a division, district and upazila/thana to see suitable profiles."
+      },
+      "3": {
+        "title": "Express interest and connect",
+        "body": "Contact details are shared only when the other person accepts."
+      }
+    },
+    "why": {
+      "title": "Why DUJON?",
+      "privacy": {
+        "title": "Privacy first",
+        "body": "Nobody sees your phone number or email until you accept an interest."
+      },
+      "simple": {
+        "title": "Simple and clear",
+        "body": "No long biodata — just the essentials and a few useful filters."
+      },
+      "respect": {
+        "title": "Respectful by design",
+        "body": "Community guidelines plus block and report for everyone."
+      },
+      "bangla": {
+        "title": "In Bangla, made for you",
+        "body": "Use the whole site in Bangla or English."
+      }
+    },
+    "safety": {
+      "title": "What we do — and what we don't do yet",
+      "body": "Members provide their own information. In this version we do not verify identity (such as NID), so please take care before contacting anyone.",
+      "link": "Read safety tips"
+    },
+    "stories": {
+      "title": "Success stories",
+      "comingSoon": "Success stories are coming soon. We'll only share them with members' permission."
+    },
+    "faq": {
+      "title": "Common questions",
+      "all": "See all questions"
+    },
+    "cta": {
+      "title": "Start today — it's free",
+      "body": "Open an account in a minute, then build your profile step by step."
     }
+  },
+  "howItWorks": {
+    "title": "How DUJON works",
+    "intro": "From creating a profile to connecting — five simple steps.",
+    "s1": {
+      "title": "Open an account",
+      "body": "Sign up with your name, email, date of birth and gender. Only people aged 18 or over can join. Your full name is never shown to others."
+    },
+    "s2": {
+      "title": "Build your profile",
+      "body": "Add your education, occupation, area and a short introduction. A photo is optional, and you decide who can see it."
+    },
+    "s3": {
+      "title": "Search by age and area",
+      "body": "Search published profiles by age range and division, district and upazila/thana. You only see members of the opposite gender."
+    },
+    "s4": {
+      "title": "Express interest",
+      "body": "If you like a profile, express interest. The other member is notified by email, but your contact details stay private."
+    },
+    "s5": {
+      "title": "Connect when you both agree",
+      "body": "When an interest is accepted, you can both see each other's email and mobile number, and talk directly."
+    },
+    "note": {
+      "title": "Good to know",
+      "body": "DUJON does not verify members' identity. Please read the safety tips before you make contact."
+    },
+    "cta": "Get started now"
+  },
+  "safetyPage": {
+    "title": "Safety and privacy",
+    "intro": "Your safety matters to us. Here we say plainly what we do, what we don't, and how you can stay safe.",
+    "do": {
+      "title": "What we do",
+      "1": "We block under-18s from registering, checked on the server.",
+      "2": "Your mobile number and email are shown only to people you are mutually connected with.",
+      "3": "We block phone numbers, emails and links in profile text.",
+      "4": "You can block or report anyone. Once blocked, you can't see each other.",
+      "5": "We strip all metadata, including location, from photos, and photos are never public — they are only served after an access check.",
+      "6": "Search engines cannot index profiles."
+    },
+    "dont": {
+      "title": "What we don't do yet",
+      "body": "In this version we do not verify anyone's identity (such as NID), photos or information, and we do not label any profile \"verified\". Confirming an email is not identity verification. Members provide their own information, so don't assume everything is true."
+    },
+    "tips": {
+      "title": "Tips before and after you meet",
+      "1": "Meet in a public place first and tell someone in your family.",
+      "2": "Never send money, whatever the reason — living abroad, a medical emergency or a gift.",
+      "3": "Never share OTPs, passwords or bank details.",
+      "4": "Talk over a video call first. Be careful if they avoid it.",
+      "5": "Stop if you feel rushed or pressured. Good relationships take time.",
+      "6": "In an emergency, call 999."
+    },
+    "report": {
+      "title": "How to block and report",
+      "body": "Open the menu (⋯) on any profile and choose \"Block\" or \"Report\". Our team reviews reports. If something feels wrong, don't wait."
+    },
+    "contactCta": "Tell us"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "intro": "Answers to common questions about DUJON. Can't find yours? Contact us.",
+    "items": {
+      "1": {
+        "q": "Is DUJON free?",
+        "a": "Yes — everything in this version is free."
+      },
+      "2": {
+        "q": "Who can see my phone number?",
+        "a": "Only people you are connected with through mutual interest."
+      },
+      "3": {
+        "q": "Do you verify profiles?",
+        "a": "Not yet. Members provide their own information. We plan to add verification in future. Please report anything suspicious."
+      },
+      "4": {
+        "q": "Who can see my profile?",
+        "a": "Logged-in members of the opposite gender who have published profiles. Visitors and search engines cannot."
+      },
+      "5": {
+        "q": "Can parents create a profile for their son or daughter?",
+        "a": "Yes. Select it under \"Profile managed by\". The person must be 18+ and must agree."
+      },
+      "6": {
+        "q": "How do I search?",
+        "a": "Choose an age range and a division, district and upazila/thana."
+      },
+      "7": {
+        "q": "What if someone bothers me?",
+        "a": "Block and report them from their profile. In an emergency, call 999."
+      },
+      "8": {
+        "q": "Will everyone see my photo?",
+        "a": "You choose: members, or only your connections."
+      },
+      "9": {
+        "q": "How do I hide or delete my profile?",
+        "a": "Hide it from your dashboard, or delete your account in Settings."
+      },
+      "10": {
+        "q": "I entered the wrong gender or date of birth.",
+        "a": "Contact us through the contact page."
+      }
+    },
+    "count": "10"
+  },
+  "legal": {
+    "version": "Version {version}",
+    "updated": "Last updated: {date}",
+    "draftBanner": "This is a draft outline, not final legal text. It needs lawyer review before launch.",
+    "toc": "On this page",
+    "terms": {
+      "title": "Terms and Conditions",
+      "intro": "Please read these terms before using DUJON.",
+      "s1": {
+        "title": "Who we are",
+        "body": "DUJON is an online matrimony service for Bangladesh. The operating entity's name and address will be added here before launch."
+      },
+      "s2": {
+        "title": "Eligibility",
+        "body": "You must be at least 18 and legally free to marry (never married, divorced or widowed). The service is intended for Bangladesh."
+      },
+      "s3": {
+        "title": "Account responsibilities",
+        "body": "You are responsible for keeping your password secret and giving accurate information. Date of birth and gender cannot be changed after registration."
+      },
+      "s4": {
+        "title": "Managed profiles",
+        "body": "Parents or guardians may manage a profile, but the person concerned must be 18+ and must agree."
+      },
+      "s5": {
+        "title": "Acceptable use",
+        "body": "Harassment, scams, asking for money, false information, commercial use and putting contact details in profile text are not allowed."
+      },
+      "s6": {
+        "title": "No identity verification",
+        "body": "In this version DUJON does not verify members' identity. Members are responsible for their own safety when contacting or meeting others."
+      },
+      "s7": {
+        "title": "Interests and contact sharing",
+        "body": "When an interest is accepted, both members' email and mobile number become visible to each other."
+      },
+      "s8": {
+        "title": "Content licence",
+        "body": "You give DUJON a limited licence to show your profile and photo to eligible members. Deleting the photo or your account ends it."
+      },
+      "s9": {
+        "title": "Suspension and termination",
+        "body": "We may suspend or close accounts that break these rules."
+      },
+      "s10": {
+        "title": "Disclaimers and limitation of liability",
+        "body": "DUJON is not responsible for the accuracy of information given by members. Detailed terms will be added after lawyer review."
+      },
+      "s11": {
+        "title": "Changes to these terms",
+        "body": "If the terms change, we will publish a new version number."
+      },
+      "s12": {
+        "title": "Governing law and contact",
+        "body": "These terms are governed by the laws of Bangladesh. For questions, see the contact page."
+      }
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "How we collect, use and protect your information.",
+      "s1": {
+        "title": "Who is responsible for your data",
+        "body": "The data controller's name and contact details will be added here before launch."
+      },
+      "s2": {
+        "title": "What we collect",
+        "body": "Account data (name, email, mobile), profile data (date of birth, education, occupation, area, introduction), an optional photo, records of interests, blocks and reports, and technical data needed for security. We do not collect NID, selfies or ID documents."
+      },
+      "s3": {
+        "title": "Why we use it",
+        "body": "To run the service, show suitable profiles, keep it safe and prevent abuse, and send you necessary messages."
+      },
+      "s4": {
+        "title": "Who can see what",
+        "body": "Visitors and search engines see no profiles. Logged-in members of the opposite gender see published profiles (without full name, date of birth, email or mobile). Only connected members see email and mobile."
+      },
+      "s5": {
+        "title": "Service providers",
+        "body": "The list and locations of hosting, database, photo storage and email providers will be added here before launch."
+      },
+      "s6": {
+        "title": "How long we keep it",
+        "body": "When you delete your account, your profile is hidden at once and personal data is permanently deleted within 30 days. Backups may take longer to clear."
+      },
+      "s7": {
+        "title": "Your rights",
+        "body": "You can ask to see, correct or delete your data and withdraw consent. Tell us through the contact page."
+      },
+      "s8": {
+        "title": "Security",
+        "body": "Passwords are stored with Argon2id, photos in private storage, and connections are encrypted."
+      },
+      "s9": {
+        "title": "Cookies",
+        "body": "We use only essential cookies: your login session and language choice. There are no advertising or tracking cookies."
+      },
+      "s10": {
+        "title": "Children",
+        "body": "DUJON is not for people under 18. Report any profile that appears to be under 18."
+      },
+      "s11": {
+        "title": "Changes and contact",
+        "body": "If this policy changes, we'll publish a new version. For questions, see the contact page."
+      }
+    },
+    "guidelines": {
+      "title": "Community Guidelines",
+      "intro": "Please follow these rules to keep DUJON respectful and safe for everyone.",
+      "s1": {
+        "title": "Be truthful",
+        "body": "Give your real age, marital status and other details. Don't mislead."
+      },
+      "s2": {
+        "title": "Be respectful",
+        "body": "No offensive, harassing or demeaning behaviour. \"No\" means no."
+      },
+      "s3": {
+        "title": "Never ask for money",
+        "body": "Asking for money, gifts or financial help is not allowed. Report such requests."
+      },
+      "s4": {
+        "title": "Use your own photo",
+        "body": "The photo should show only you. No explicit, violent or someone else's photos."
+      },
+      "s5": {
+        "title": "Don't share contact details in public text",
+        "body": "Don't put phone numbers, emails or links in your profile. Details are shared automatically once you both agree."
+      },
+      "s6": {
+        "title": "Respect others' privacy",
+        "body": "Don't share anyone's information or photos without permission."
+      },
+      "s7": {
+        "title": "If rules are broken",
+        "body": "We may warn, hide a profile or suspend an account."
+      }
+    }
+  },
+  "auth": {
+    "register": {
+      "title": "Create your account",
+      "fullName": "Full name",
+      "fullNameHelp": "Your full name is never shown to others.",
+      "email": "Email",
+      "mobile": "Mobile number",
+      "mobileHelp": "Only people you connect with will see it.",
+      "password": "Password",
+      "passwordHelp": "At least 8 characters. Avoid easy-to-guess passwords.",
+      "gender": "Gender",
+      "male": "Male",
+      "female": "Female",
+      "dob": "Date of birth",
+      "day": "Day",
+      "month": "Month",
+      "year": "Year",
+      "lockedNote": "Gender and date of birth can't be changed later.",
+      "agree": "I confirm I am 18 or older and I have read and agree to the {terms} and {privacy}.",
+      "submit": "Create account",
+      "haveAccount": "Already have an account?",
+      "checkEmail": "We've sent a message to your email. Please follow the instructions.",
+      "nextNote": "Your search filters will apply once your profile is published."
+    },
+    "login": {
+      "title": "Log in",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Log in",
+      "forgot": "Forgot your password?",
+      "noAccount": "Don't have an account?",
+      "resetDone": "Your password was changed. Log in with your new password."
+    },
+    "forgot": {
+      "title": "Reset your password",
+      "body": "Enter your email. If an account exists, we'll send a reset link.",
+      "email": "Email",
+      "submit": "Send link",
+      "sent": "If an account exists, you'll get an email in a few minutes. Check your spam folder too."
+    },
+    "reset": {
+      "title": "Set a new password",
+      "password": "New password",
+      "confirm": "Confirm password",
+      "submit": "Change password",
+      "success": "Password changed. You've been logged out on other devices.",
+      "invalid": "This link has expired or has already been used.",
+      "requestNew": "Request a new link"
+    },
+    "verify": {
+      "title": "Email confirmation",
+      "success": "Thank you! Your email is confirmed.",
+      "expired": "This link has expired or has already been used.",
+      "resend": "Send a new link",
+      "banner": "Confirm your email to send or accept interests.",
+      "note": "Confirming your email is not identity verification.",
+      "continue": "Go to dashboard",
+      "loginFirst": "Log in to get a new link."
+    }
+  },
+  "profile": {
+    "displayName": "Display name",
+    "displayNameHelp": "Use your first name or a nickname.",
+    "createdByLabel": "Profile managed by",
+    "createdBy": {
+      "self": "Self",
+      "parent": "Parent",
+      "guardian": "Guardian",
+      "sibling": "Sibling",
+      "relative": "Relative"
+    },
+    "managedBadge": "Managed by {relation}",
+    "maritalStatus": "Marital status",
+    "marital": {
+      "never_married": "Never married",
+      "divorced": "Divorced",
+      "widowed": "Widowed"
+    },
+    "height": "Height",
+    "heightFeet": "Feet",
+    "heightInches": "Inches",
+    "heightValue": "{feet, number}′ {inches, number}″",
+    "educationLevel": "Education",
+    "edu": {
+      "below_ssc": "Below SSC",
+      "ssc": "SSC",
+      "hsc": "HSC",
+      "diploma": "Diploma",
+      "bachelors": "Bachelor's",
+      "masters": "Master's",
+      "doctorate": "Doctorate",
+      "other": "Other"
+    },
+    "educationDetail": "Subject / institution",
+    "occupation": "Occupation",
+    "location": "Location",
+    "division": "Division",
+    "district": "District",
+    "upazila": "Upazila or Thana",
+    "selectPlaceholder": "Select",
+    "about": "About me",
+    "aboutHelp": "Briefly describe yourself, your interests and the partner you hope to find. Don't include phone numbers, emails or links.",
+    "familyInfo": "About my family",
+    "familyInfoHelp": "Keep it brief, e.g. number of siblings. Don't include addresses or phone numbers.",
+    "status": {
+      "draft": "Draft",
+      "published": "Published",
+      "hidden": "Hidden",
+      "suspended": "Suspended"
+    },
+    "publish": "Publish profile",
+    "republish": "Publish again",
+    "hide": "Hide profile",
+    "hideHelp": "When hidden, nobody can find you. Existing connections stay.",
+    "preview": "Preview my profile",
+    "lockedFields": "Need to correct gender or date of birth? Contact us.",
+    "genderLabel": "Gender",
+    "age": "Age",
+    "gender": {
+      "male": "Male",
+      "female": "Female"
+    },
+    "checklist": {
+      "title": "Complete before publishing",
+      "displayName": "Display name",
+      "maritalStatus": "Marital status",
+      "educationLevel": "Education",
+      "occupation": "Occupation",
+      "about": "About me (at least 30 characters)",
+      "location": "Division and district"
+    },
+    "published": "Your profile is now published!",
+    "suspendedNote": "Your profile is suspended. Contact us for details.",
+    "editSection": {
+      "basics": "Basic details",
+      "location": "Location",
+      "photo": "Photo",
+      "visibility": "Profile status"
+    },
+    "saved": "Saved"
+  },
+  "onboarding": {
+    "title": "Profile setup",
+    "step": "Step {current, number} of {total, number}",
+    "about": {
+      "title": "About you"
+    },
+    "location": {
+      "title": "Where do you live?"
+    },
+    "photo": {
+      "title": "Add a photo"
+    },
+    "preferences": {
+      "title": "Who are you looking for?"
+    },
+    "review": "Review your profile",
+    "reviewHelp": "This is how others will see your profile. Publish when you're happy with it.",
+    "editStep": "Edit this step"
+  },
+  "photo": {
+    "upload": "Upload photo",
+    "choose": "Choose photo",
+    "replace": "Replace photo",
+    "delete": "Delete photo",
+    "rules": "JPG, PNG or WebP, up to 5 MB. The photo should show only you, with your face clearly visible.",
+    "notReviewed": "Photos are not reviewed before they appear in this version. Inappropriate photos can be reported.",
+    "visibilityLabel": "Who can see my photo",
+    "visibility": {
+      "members": "Members who can see my profile",
+      "connections": "Only my connections"
+    },
+    "placeholderAlt": "No photo for {name}",
+    "alt": "{name}'s profile photo",
+    "none": "No photo yet",
+    "hiddenForNow": "Only connected members can see this photo",
+    "current": "Current photo"
+  },
+  "preferences": {
+    "title": "Partner preferences",
+    "ageRange": "Age range",
+    "ageFrom": "From",
+    "ageTo": "To",
+    "area": "Preferred area",
+    "areaHelp": "Optional. Leave blank for any area.",
+    "note": "Preferences only set your default search; they don't hide you from anyone."
+  },
+  "search": {
+    "title": "Find a life partner",
+    "results": "{count, plural, one {# profile found} other {# profiles found}}",
+    "filters": "Filters",
+    "filtersCount": "Filters ({count, number})",
+    "ageMin": "Minimum age",
+    "ageMax": "Maximum age",
+    "apply": "Apply filters",
+    "clear": "Clear all filters",
+    "anyArea": "Any area",
+    "empty": {
+      "title": "No profiles match these filters yet",
+      "body": "Try a wider age range or remove the upazila/district filter."
+    },
+    "coldStart": "DUJON is new — members are joining every day. Please check back soon.",
+    "publishFirst": "Publish your profile to start searching.",
+    "publishFirstCta": "Complete your profile",
+    "pageOf": "Page {page, number} of {total, number}",
+    "prev": "Previous",
+    "next": "Next",
+    "view": "View profile",
+    "saveAria": "Save {name}'s profile",
+    "unsaveAria": "Remove {name} from saved",
+    "activeFilters": "Active filters",
+    "pagination": "Pagination",
+    "welcome": "Your profile is published. Results below use your preferences."
+  },
+  "profileDetail": {
+    "about": "About",
+    "basics": "Basic details",
+    "family": "Family",
+    "lookingFor": "Looking for",
+    "lookingForValue": "Aged {min, number}–{max, number}, {area}",
+    "previewBanner": "This is how others see your profile.",
+    "hiddenSender": "This profile is currently hidden.",
+    "back": "Back to results",
+    "actions": "Profile actions",
+    "menu": "More options",
+    "location": "Location"
+  },
+  "interests": {
+    "title": "Interests",
+    "express": "Express interest",
+    "confirm": {
+      "title": "Send interest?",
+      "body": "If {name} accepts, you will both be able to see each other's email and mobile number.",
+      "send": "Send interest"
+    },
+    "sent": "Interest sent",
+    "withdraw": "Withdraw interest",
+    "received": "{name} is interested in you",
+    "accept": "Accept",
+    "decline": "Decline",
+    "acceptConfirm": "Accepting will share your contact details with each other.",
+    "connected": "Connected",
+    "notAccepted": "Not accepted",
+    "tryAgainAfter": "You can try again after {date}.",
+    "tabs": {
+      "received": "Received",
+      "sent": "Sent",
+      "connections": "Connections"
+    },
+    "empty": {
+      "received": "No interests yet. A complete profile with a photo helps.",
+      "sent": "You haven't expressed interest in anyone yet.",
+      "connections": "When someone accepts, they'll appear here."
+    },
+    "verifyFirst": "Confirm your email to express interest",
+    "pendingStatus": "Pending",
+    "declinedStatus": "Not accepted",
+    "date": "{date}",
+    "viewContact": "View contact details",
+    "publishFirst": "Publish your profile to express interest"
+  },
+  "contact": {
+    "title": "Contact details",
+    "email": "Email",
+    "mobile": "Mobile",
+    "noMobile": "No mobile number shared",
+    "safety": "Meet in a public place first, tell your family, and never send money.",
+    "safetyLink": "Safety tips"
+  },
+  "block": {
+    "action": "Block",
+    "confirm": "Block {name}? You won't see each other anymore, and any interests or connection will end.",
+    "done": "Blocked",
+    "unblock": "Unblock"
+  },
+  "report": {
+    "action": "Report",
+    "title": "Why are you reporting this profile?",
+    "reason": {
+      "fake_profile": "Seems like a fake profile",
+      "inappropriate_photo": "Inappropriate photo",
+      "harassment": "Harassment or disrespectful behaviour",
+      "money_request_or_scam": "Asking for money or a scam",
+      "appears_underage": "Appears to be under 18",
+      "married_or_misleading": "Married or giving false information",
+      "other": "Other"
+    },
+    "details": "Details (optional)",
+    "alsoBlock": "Also block this person",
+    "submit": "Send report",
+    "done": "Thank you. Our team will review this report."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "greeting": "Welcome, {name}",
+    "pending": "New interests",
+    "connections": "Connections",
+    "saved": "Saved profiles",
+    "profileStatus": "Your profile",
+    "checklist": {
+      "title": "Profile progress",
+      "basics": "Basic info",
+      "location": "Location",
+      "photo": "Photo (optional)",
+      "preferences": "Preferences",
+      "email": "Email confirmed",
+      "done": "Done",
+      "todo": "To do"
+    },
+    "quick": {
+      "search": "Search profiles",
+      "edit": "Edit profile"
+    },
+    "nav": "Dashboard menu",
+    "resend": "Resend confirmation link"
+  },
+  "saved": {
+    "title": "Saved profiles",
+    "empty": "Save profiles to view them later.",
+    "saved": "Saved",
+    "removed": "Removed from saved"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "notifications": "Email notifications",
+    "notify": {
+      "received": "When someone expresses interest",
+      "accepted": "When someone accepts my interest"
+    },
+    "mobile": "Mobile number",
+    "email": "Email",
+    "emailReadOnly": "To change your email, contact us.",
+    "password": "Change password",
+    "currentPassword": "Current password",
+    "newPassword": "New password",
+    "confirmPassword": "Confirm new password",
+    "blocked": "Blocked members",
+    "blockedEmpty": "You haven't blocked anyone.",
+    "logoutAll": "Log out of all devices",
+    "danger": "Delete account",
+    "dangerBody": "Go here if you want to delete your account and profile."
+  },
+  "deleteAccount": {
+    "title": "Delete your account?",
+    "body": "Your profile will be hidden immediately and you won't be able to log in. Your personal data will be permanently deleted within 30 days. This cannot be undone.",
+    "password": "Password",
+    "typeToConfirm": "To confirm, type: DELETE",
+    "submit": "Delete my account",
+    "done": "Your account deletion has started. Thank you for using DUJON.",
+    "doneTitle": "Account deletion requested"
+  },
+  "contactPage": {
+    "title": "Contact us",
+    "intro": "Write to us with questions, feedback or for help.",
+    "name": "Name",
+    "email": "Email",
+    "mobile": "Mobile",
+    "subjectLabel": "Subject",
+    "message": "Message",
+    "subject": {
+      "general": "General question",
+      "account_help": "Account help",
+      "safety": "Safety concern",
+      "feedback": "Feedback",
+      "other": "Other"
+    },
+    "submit": "Send message",
+    "success": "Thank you! We've received your message and will reply soon.",
+    "privacy": "Only the DUJON team will see your message, and it is deleted after 12 months.",
+    "safetyNote": "In an emergency, call 999.",
+    "supportTitle": "Other ways to reach us",
+    "supportBody": "The support email and response time will be added here before launch."
   },
   "errors": {
     "required": "This field is required.",
+    "email": "Please enter a valid email address.",
+    "mobile": "Please enter a valid Bangladeshi mobile number (e.g. 01712345678).",
+    "passwordShort": "Password must be at least 8 characters.",
+    "passwordCommon": "This password is too common. Please choose another.",
+    "passwordMismatch": "The passwords don't match.",
+    "wrongPassword": "That password is incorrect.",
+    "underAge": "You must be at least 18 to use DUJON.",
+    "invalidDate": "Please enter a valid date.",
+    "invalidAgeRange": "Minimum age cannot be greater than maximum age.",
+    "invalidHeight": "Please enter a valid height (between 4 ft and 7 ft 2 in).",
+    "aboutShort": "Please write at least 30 characters.",
+    "locationMismatch": "The selected areas don't match. Please select again.",
+    "contactInfo": "Phone numbers, emails and links aren't allowed here. Contact details are shared automatically once you both agree.",
+    "profileIncomplete": "Please complete the highlighted fields before publishing.",
+    "invalidCredentials": "Email or password is incorrect.",
+    "rateLimited": "Too many attempts. Please try again in {minutes, number} minutes.",
+    "interestExists": "You've already expressed interest.",
+    "dailyLimit": "You've reached today's limit. Please try again tomorrow.",
+    "verifyFirst": "Please confirm your email before sending or accepting interests.",
+    "publishFirst": "Please publish your profile before sending interests.",
+    "cooldown": "This member did not accept your interest. You can try again after a while.",
+    "notAvailable": "This profile isn't available.",
+    "reportExists": "You've already reported this profile.",
+    "linkExpired": "This link has expired.",
+    "photoTooLarge": "The photo is larger than 5 MB.",
+    "photoType": "Please use a JPG, PNG or WebP image.",
+    "photoTooSmall": "The photo is too small — at least 400×400 pixels.",
+    "confirmWord": "The confirmation word is not correct.",
     "generic": "Something went wrong. Please try again. (Reference: {requestId})",
+    "genericShort": "Something went wrong. Please try again.",
     "notFound": {
       "title": "Page not found",
       "body": "The page you are looking for doesn't exist or has been moved.",
       "home": "Back to the home page"
     },
-    "formSummary": "{count, plural, one {# field needs attention} other {# fields need attention}}"
+    "formSummary": "{count, plural, one {# field needs attention} other {# fields need attention}}",
+    "tryAgain": "Try again"
+  },
+  "notices": {
+    "saved": "Saved.",
+    "checkEmail": "We've sent a message to your email. Please follow the instructions.",
+    "forgotSent": "If an account exists, you'll get an email in a few minutes. Check your spam folder too.",
+    "verificationSent": "A confirmation link has been sent.",
+    "alreadyVerified": "Your email is already confirmed.",
+    "photoSaved": "Photo saved.",
+    "photoDeleted": "Photo deleted.",
+    "hidden": "Profile hidden.",
+    "interestSent": "Interest sent.",
+    "connected": "You are now connected.",
+    "declined": "Interest declined.",
+    "withdrawn": "Interest withdrawn.",
+    "blocked": "Blocked.",
+    "unblocked": "Unblocked.",
+    "reported": "Thank you. Our team will review this report.",
+    "passwordChanged": "Password changed. You've been logged out on other devices.",
+    "contactSent": "Thank you! We've received your message and will reply soon."
   },
   "meta": {
     "home": {
@@ -73,6 +813,44 @@
       "description": "Find a life partner in Bangladesh by age and area. Contact is shared only when you both agree — free, private and respectful."
     },
     "titleTemplate": "%s — DUJON",
-    "notFound": "Page not found"
+    "notFound": "Page not found",
+    "howItWorks": {
+      "title": "How DUJON works",
+      "description": "From creating a profile to connecting — the simple steps to finding a life partner on DUJON."
+    },
+    "safety": {
+      "title": "Safety and privacy",
+      "description": "What we do and don't verify, tips for staying safe, and how to block and report."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "description": "Answers about using DUJON, privacy, profiles and contact."
+    },
+    "contact": {
+      "title": "Contact DUJON",
+      "description": "Get in touch with the DUJON team for questions, feedback or help."
+    },
+    "terms": {
+      "title": "Terms and Conditions",
+      "description": "The terms for using DUJON."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How DUJON collects, uses and protects your information."
+    },
+    "guidelines": {
+      "title": "Community Guidelines",
+      "description": "The rules that keep DUJON respectful and safe."
+    },
+    "register": "Create account",
+    "login": "Log in",
+    "forgot": "Reset password",
+    "reset": "New password",
+    "verify": "Email confirmation",
+    "accountDeleted": "Account deletion requested",
+    "search": "Find a life partner",
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "onboarding": "Profile setup"
   }
 }
